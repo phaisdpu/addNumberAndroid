@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             maxNumber = "C00${maxId}"
 
 //เลขไอดีแบบสุ่ม แต่ตั้งเลขสมาชิกเป็นตัวเลขที่กำหนดเอง
+            //testToGithub
             val itemPushKey = database.getReference().child("Members").push().key
 
             val users = Member(name, phone, email, maxNumber)
